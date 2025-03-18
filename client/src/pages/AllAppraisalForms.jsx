@@ -10,7 +10,7 @@ const AllAppraisalForms = () => {
         const fetchAppraisals = async () => {
             try {
                 const token = localStorage.getItem('token');
-                const response = await axios.get('http://localhost:5000/api/appraisal', {
+                const response = await axios.get('https://appraisal-system-1.onrender.com/api/appraisal', {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('token')}`,
                         'Cache-Control': 'no-cache',  //  Prevent caching
